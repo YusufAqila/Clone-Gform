@@ -4,5 +4,8 @@
   },
   "scripts": {
     "dev": "npx tailwind -i ./styles/tailwind.css -o ./styles/output.css --watch"
+  },
+  "dependencies": {
+    "postcss": "^8.4.24"
   }
 }

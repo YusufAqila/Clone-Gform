@@ -4,6 +4,11 @@ module.exports = {
   theme: {
     extend: {},
   },
+  fontFamily: {
+    'roboto': ['roboto, sans-serif'],
+    'google': ['"product sans", sans-serif'],
+    'poppins': ['poppins, sans-serif'],
+  },
   plugins: [],
 }
 
