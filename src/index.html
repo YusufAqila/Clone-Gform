@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link  href="/styles/output.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+    <title>Tugas HTML 2</title>
+  </head>
+  <body class="w-[100%] h-screen bg-[#f0ebf8] flex flex-col">
+    <main>
+      <section>
+        <article class="flex justify-center items-center">
+          <form action="" class="flex flex-col justify-start items-center sm:w-[600px] w-[93%]  mt-5">
+            <div style="box-sizing: border-box;" class="header border-[1px] border-gray-300 w-[100%] bg-white before:content-[''] before:absolute before:h-[10px] before:bg-[#673ab7] before:top-[-10px] before:w-[100%] before:rounded-t-[8px] relative rounded-b-[8px] box-border">
+              <div class="judul p-3 pl-6 border-b-[1px] border-gray-300">
+                <h1 class="font-roboto text-[24pt]">
+                  Clone: TUGAS 2 HTML
+                </h1>
+                </div>
+              <div class="isi p-2 pl-6 border-b-[1px] border-gray-300">
+                <div class="akun flex">
+                    <p class="gmail mr-2 font-roboto text-[#6C6A70] text-[14.5px] font-bold">muhyusuf2402@gmail.com</p>
+                    <p class="font-roboto text-[#1a73e8] text-[14.5px]">Ganti akun</p>
+                </div>
+                <p class="peringatan text-[#5f6368] mt-[24px] text-[14px] w-[95%]">
+                  Nama dan foto yang terkait dengan Akun Google Anda akan
+                  direkam saat Anda mengupload file dan mengirim formulir ini.
+                  Hanya alamat email yang Anda masukkan yang dapat menjadi
+                  bagian dari respons Anda.
+                </p>
+              </div>
+              <div class="wajibDiisi">
+                <p class="red text-[#D93025] text-[14px] p-2 pl-6 pb-4">* Menunjukkan pertanyaan yang wajib diisi</p>
+              </div>
+            </div>
+            <div class="header mt-3 border-[1px] border-gray-300 w-[100%] bg-white rounded-[8px] box-border p-6 flex flex-col">
+              <label for="emailInput" class="emailLabel font-roboto text-[#202124] text-[12pt] mb-7">Email <span class="text-[#D93025]">*</span></label>
+              <input
+                type="email"
+                class="emailInput border-b-[1px] border-[rgba(0,0,0,.12)] outline-none w-[50%] placeholder:text-gray-500 focus:border-b-2 focus:border-[#673ab7] invalid:border-[#D93025] invalid:focus:border-[#D93025]"
+                name="emailInput"
+                placeholder="Email Anda"
+                required
+              />
+            </div>
+            <div class="uploadFile mt-3 border-[1px] border-gray-300 w-[100%] bg-white rounded-[8px] box-border p-6 flex flex-col">
+              <label for="uploadFileInput" class="uploadFileLabel mb-4"
+                >UPLOAD SCREENSHOOT TUGAS 2 <span class="text-[#D93025]">*</span></label
+              >
+              <div class="flex items-start justify-start w-full">
+                <label for="dropzone-file" class="flex flex-col items-center justify-center border-[1px] border-gray-300 rounded-[4px] cursor-pointer bg-white  hover:bg-gray-100 focus:bg-gray-300 p-2">
+                    <div class="flex flex-row items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" class="fill-[#1a73e8] mr-2" height="18" viewBox="0 0 18 18"><g transform="translate(-3, -3)"><path d="M6,14.25 L7.5,14.25 L7.5,16.5 L16.5,16.5 L16.5,14.25 L18,14.25 L18,16.5 C18,17.325 17.325,18 16.5,18 L7.5,18 C6.675,18 6,17.325 6,16.5 L6,14.25 Z M9.3075,10.8075 L11.25,8.8725 L11.25,15 L12.75,15 L12.75,8.8725 L14.6925,10.815 L15.75,9.75 L12,6 L8.25,9.75 L9.3075,10.8075 Z"></path><path fill="none"></path></g></svg>
+                        <p class=" text-[#1a73e8] text-[15px] font-['Product_Sans']">Tambahkan file</p>
+                        
+                    </div>
+                    <input id="dropzone-file" type="file" class="hidden" />
+                </label>
+            </div> 
+            </div>
+            <div class="wrapperKirim mt-3 w-[100%] rounded-[8px] box-border flex justify-between">
+                <button type="submit" class="bg-[#673ab7] px-6 py-[6px] cursor-pointer rounded-[4px] text-white font-semibold text-[15px] outline-none" >Kirim</button>
+                <button type="reset" class="text-[#673AB7] text-['Product_Sans'] p-2 text-[14px] font-semibold cursor-pointer hover:bg-gray-200 focus:bg-[#673ab71a] outline-none rounded-[4px]">Kosongkan formulir</button>
+            </div>
+            <div class="dibuatOleh w-[85%] mt-6 text-center font-roboto text-[#000000A8] text-[12px] leading-[14px]">
+              Konten ini tidak dibuat atau didukung oleh Google.
+              <a class="underline">Laporkan Penyalahgunaan</a> - <a class="underline">Persyaratan Layanan</a> -
+              <a class="underline">Kebijakan Privasi</a>
+            </div>
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer class="flex flex-row w-[100%] justify-center items-center mt-6 pb-6">
+      <span class="font-['Product_Sans'] text-[#918E96] font-[500] text-[22px] mr-2">Clone</span><svg xmlns="http://www.w3.org/2000/svg" class="fill-[#6C6A70]" width="74" height="24"><path d="M9.24 8.19v2.46h5.88c-.18 1.38-.64 2.39-1.34 3.1-.86.86-2.2 1.8-4.54 1.8-3.62 0-6.45-2.92-6.45-6.54s2.83-6.54 6.45-6.54c1.95 0 3.38.77 4.43 1.76L15.4 2.5C13.94 1.08 11.98 0 9.24 0 4.28 0 .11 4.04.11 9s4.17 9 9.13 9c2.68 0 4.7-.88 6.28-2.52 1.62-1.62 2.13-3.91 2.13-5.75 0-.57-.04-1.1-.13-1.54H9.24zm15.76-2c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52zm28.58-8.03h-.09c-.57-.68-1.67-1.3-3.06-1.3C47.53 6.19 45 8.72 45 12c0 3.26 2.53 5.81 5.43 5.81 1.39 0 2.49-.62 3.06-1.32h.09v.81c0 2.22-1.19 3.41-3.1 3.41-1.56 0-2.53-1.12-2.93-2.07l-2.22.92c.64 1.54 2.33 3.43 5.15 3.43 2.99 0 5.52-1.76 5.52-6.05V6.49h-2.42v1zm-2.93 8.03c-1.76 0-3.1-1.5-3.1-3.52 0-2.05 1.34-3.52 3.1-3.52 1.74 0 3.1 1.5 3.1 3.54.01 2.03-1.36 3.5-3.1 3.5zM38 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52zM58 .24h2.51v17.57H58zm10.26 15.28c-1.3 0-2.22-.59-2.82-1.76l7.77-3.21-.26-.66c-.48-1.3-1.96-3.7-4.97-3.7-2.99 0-5.48 2.35-5.48 5.81 0 3.26 2.46 5.81 5.76 5.81 2.66 0 4.2-1.63 4.84-2.57l-1.98-1.32c-.66.96-1.56 1.6-2.86 1.6zm-.18-7.15c1.03 0 1.91.53 2.2 1.28l-5.25 2.17c0-2.44 1.73-3.45 3.05-3.45z"/></svg>
+      <span class="font-['Product_Sans'] text-[#918E96] font-[500] text-[22px] ml-2">Formulir</span>
+    </footer>
+    <a href="https://github.com/YusufAqila/Clone-Gform" class="githubYusufAqila fixed bottom-4 left-4 rounded-full bg-white p-0 m-0" title="Repository GitHub"><svg xmlns="http://www.w3.org/2000/svg" fill="#333" class="p-0 m-0" height="2em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+  </body>
+</html>
